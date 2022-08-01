@@ -1,9 +1,19 @@
 const removeFromArray = function(array,b) {
 
+    for(itemIndex = 1; itemIndex<arguments.length;itemIndex++){
 
-    indexOfRemoved = array.findIndex((find)=>find==b);
+        indexOfRemoved = array.findIndex((find)=>find==arguments[itemIndex]);
 
-    array.splice(indexOfRemoved,1);
+        if (indexOfRemoved == -1) continue; //Si no consigue nada el metodo .findIndex() retorna -1
+
+        array.splice(indexOfRemoved,1);
+
+        
+
+
+    }
+
+   
 
     return array;
 
