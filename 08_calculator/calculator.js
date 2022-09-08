@@ -1,16 +1,25 @@
-const add = function() {
+const add = function(a,b) {
+  return a+b;	
+};
+
+const subtract = function(a,b) {
+  return a-b;
 	
 };
 
-const subtract = function() {
-	
+const sum = function(arrayDeSuma) {
+
+  const resultado = arrayDeSuma.reduce((acumulador,item)=> acumulador += item ,0);
+
+  return resultado;
+  	
 };
 
-const sum = function() {
-	
-};
+const multiply = function(arrayDeMult) {
 
-const multiply = function() {
+  const resultado = arrayDeMult.reduce((acumulador,item)=> acumulador *= item ,1);
+
+  return resultado;
 
 };
 
