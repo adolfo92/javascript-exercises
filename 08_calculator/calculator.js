@@ -23,7 +23,9 @@ const multiply = function(arrayDeMult) {
 
 };
 
-const power = function() {
+const power = function(int,sup) {
+
+  return int**sup;
 	
 };
 
