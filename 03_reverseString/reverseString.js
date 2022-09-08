@@ -21,3 +21,7 @@ const reverseString = function(words) {
 
 // Do not edit below this line
 module.exports = reverseString;
+
+
+//----- Parece que el codigo mas limpio era este
+// return string.split('').reverse().join('');
