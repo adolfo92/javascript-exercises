@@ -29,8 +29,14 @@ const power = function(int,sup) {
 	
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let acumulador=1;
+  for(i=1;i<=number;i++){
+    acumulador *= i;
+  }
+
+  return acumulador;
+
 };
 
 // Do not edit below this line
